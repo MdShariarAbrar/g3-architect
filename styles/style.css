@@ -157,6 +157,39 @@ main{
     top: -80px;
 }
 
+/* facts section design */
+.facts{
+    margin-bottom: 6.25rem;
+}
+.facts h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* facts card section design */
+.fact-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 180px;
+}
+.card{
+    text-align: center;
+    height: 242px;
+    width: 242px;
+    box-sizing: border-box;
+    padding: 3rem;
+    border: 1px solid #FF900E;
+    border-radius: 0.5rem;
+}
+.card h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #424242;
+}
+.card p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+}
 
 
 
@@ -208,6 +241,16 @@ main{
     .feature-img img {
         margin: 0;
     }
+    .facts{
+        padding: 1rem;
+    }
+    .fact-cards{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        
+    }
+    
 
 
 }
@@ -244,6 +287,13 @@ main{
     }
     .feature-img img {
         margin: 0;
+    }
+    .facts{
+        padding: 2rem 3rem;
+    }
+    .fact-cards{
+        flex-wrap: wrap;
+        
     }
 
 }
@@ -285,4 +335,11 @@ main{
     .feature-img img {
         margin: 0;
     }  
+    .facts{
+        padding: 3rem 5rem;
+    }
+    .fact-cards{
+        flex-wrap: wrap;
+        
+    }
 }
