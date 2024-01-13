@@ -80,8 +80,45 @@ nav ul li a{
     width: 100%;
 }
 
+/* main section design */
+main{
+    margin:0 15rem ;
+}
+
+/* quick list section desing */
+.quick-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5.5rem;
+}
+.galary{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.galary img {
+    width: 342px;
+    height: 342px;
+}
+.quick-list-text {
+    margin-left: 4rem;
+}
+.quick-list-text h2{
+    margin-bottom: 1.5rem;
+}
 
 
+
+
+
+
+
+
+
+/* -==============================================
+====================================================
+===================================================== */
 /* responsive styles */
 /* for mobile */
 @media screen and (max-width: 576px) {
@@ -101,6 +138,20 @@ nav ul li a{
     .hero-img{
         width: 100%;
     }
+    main {
+        margin: 0;
+    }
+    .quick-list{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .quick-list-text{
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+    .galary{
+        grid-template-columns: 1fr;
+    }
 
 
 }
@@ -115,6 +166,22 @@ nav ul li a{
         flex-direction: column;
         gap:2rem;
     }
+    main {
+        margin: 0;
+    }
+    .quick-list{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        
+    }
+    .quick-list-text{
+        margin: 0 auto;
+        padding: 2rem 3rem;
+        text-align: center;
+    }
+    .galary{
+        grid-template-columns: repeat(2,1fr);
+    }
 
 }
 
@@ -122,5 +189,21 @@ nav ul li a{
 @media screen and (min-width:992px) and (max-width: 1200px){
     header {
         padding: 3rem 5rem;
+    }
+    main {
+        margin: 0;
+    }
+    .quick-list{
+        flex-direction: column-reverse;
+        gap: 2rem;
+        
+    }
+    .quick-list-text{
+        margin: 0 auto;
+        padding: 3rem 5rem;
+        text-align: center;
+    }
+    .galary{
+        grid-template-columns: repeat(2,1fr);
     }    
 }
